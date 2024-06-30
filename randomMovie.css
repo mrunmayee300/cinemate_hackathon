@@ -1,0 +1,386 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url("bg-img.png");
+    
+    background-size: cover;
+}
+
+.bg-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0rem 2rem;
+    text-align: center;
+}
+
+.headGenre {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.carousel {
+    perspective: 1000px;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 10vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+}
+
+.carousel-item.selected {
+    transform: scale(1.2);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.carousel-inner .carousel-item:nth-child(1)  { transform: rotateY(0deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(2)  { transform: rotateY(45deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(3)  { transform: rotateY(90deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(4)  { transform: rotateY(135deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(5)  { transform: rotateY(180deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(6)  { transform: rotateY(225deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(7)  { transform: rotateY(270deg) translateZ(230px); }
+.carousel-inner .carousel-item:nth-child(8)  { transform: rotateY(315deg) translateZ(230px); }
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 1rem;
+}
+
+.next-btn {
+    right: 1rem;
+}
+btn-57,
+.btn-57 *,
+.btn-57 :after,
+.btn-57 :before,
+.btn-57:after,
+.btn-57:before {
+border: 0 solid;
+box-sizing: border-box;
+}
+.btn-57 {
+-webkit-tap-highlight-color: 
+transparent;
+-webkit-appearance: button;
+background-color: 
+#000;
+background-image: none;
+color: 
+#fff;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 100%;
+
+margin: 0;
+-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+padding: 0;
+}
+.btn-57:disabled {
+cursor: default;
+}
+.btn-57:-moz-focusring {
+outline: auto;
+}
+.btn-57 svg {
+display: block;
+vertical-align: middle;
+}
+.btn-57 [hidden] {
+display: none;
+}
+.btn-57 {
+background: linear-gradient(90deg, #131313, #f8150e);
+border-radius: 50%;
+height: 80px;
+width: 80px;
+box-sizing: border-box;
+color: #000;
+display: block;
+border: none;
+font-weight: 900;
+overflow: hidden;
+
+position: relative;
+top: 2rem;
+text-transform: uppercase;
+}
+.btn-57 span {
+background: black;
+border-radius: 50%;
+
+color: #fff;
+display: grid;
+inset: 5px;
+place-items: center;
+font-size: 40px;
+position: absolute;
+transition: background 0.3s;
+}
+.btn-57:hover span {
+background: none;
+}
+
+    /* PREVIOUS BUTTON */
+
+    .btn-56,
+    .btn-56 *,
+    .btn-56 :after,
+    .btn-56 :before,
+    .btn-56:after,
+    .btn-56:before {
+    border: 0 solid;
+    box-sizing: border-box;
+    }
+    .btn-56 {
+    -webkit-tap-highlight-color: 
+    transparent;
+    -webkit-appearance: button;
+    background-color: 
+    #000;
+    background-image: none;
+    color: 
+    #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+   
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    }
+    .btn-56:disabled {
+    cursor: default;
+    }
+    .btn-56:-moz-focusring {
+    outline: auto;
+    }
+    .btn-56 svg {
+    display: block;
+    vertical-align: middle;
+    }
+    .btn-56 [hidden] {
+    display: none;
+    }
+    .btn-56 {
+    background: linear-gradient(90deg,#f8150e, #131313);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+   
+    font-weight: 900;
+    overflow: hidden;
+    
+    position: absolute;
+    
+    text-transform: uppercase;
+    }
+    .btn-56 span {
+    background: black;
+    border-radius: 50%;
+    
+    color: #fff;
+    display: grid;
+    inset: 5px;
+    place-items: center;
+    font-size: 40px;
+    position: absolute;
+    transition: background 0.3s;
+    }
+    .btn-56:hover span {
+    background: none;
+    }
+.instructions {
+    position: absolute;
+    bottom: 1rem;
+    width: 70%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.instruction {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .headGenre {
+        font-size: 2rem;
+    }
+
+    .carousel {
+        height: 60vh;
+    }
+
+    .carousel-item {
+        width: 25%;
+        height: 40%;
+    }
+
+    .carousel-inner .carousel-item:nth-child(1)  { transform: rotateY(0deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(2)  { transform: rotateY(45deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(3)  { transform: rotateY(90deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(4)  { transform: rotateY(135deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(5)  { transform: rotateY(180deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(6)  { transform: rotateY(225deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(7)  { transform: rotateY(270deg) translateZ(150px); }
+    .carousel-inner .carousel-item:nth-child(8)  { transform: rotateY(315deg) translateZ(150px); }
+
+    .btn-56, .btn-57 {
+        height: 60px;
+        width: 60px;
+    }
+
+    .btn-56 span, .btn-57 span {
+        font-size: 30px;
+    }
+
+    .instructions {
+        width: 95%;
+    }
+
+    .instruction {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .opacity{
+        width: 120%;
+        height: 120%;
+    }
+    .headGenre {
+        font-size: 1.5rem;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .carousel-item {
+        width: 5.2rem;
+        height: 45%;
+    }
+
+    .carousel-inner .carousel-item:nth-child(1)  { transform: rotateY(0deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(2)  { transform: rotateY(45deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(3)  { transform: rotateY(90deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(4)  { transform: rotateY(135deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(5)  { transform: rotateY(180deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(6)  { transform: rotateY(225deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(7)  { transform: rotateY(270deg) translateZ(120px); }
+    .carousel-inner .carousel-item:nth-child(8)  { transform: rotateY(315deg) translateZ(120px); }
+
+    .btn-56{
+        height: 4rem;
+        width: 4rem;
+    } 
+    .btn-57 {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .btn-56 span{
+        font-size: 2rem;
+        padding: 0rem;
+        background: black;
+    }
+    .btn-57 span {
+        font-size: 2rem;
+        padding: 0rem;
+        background: black;
+        
+        
+    }
+
+    .instructions {
+        width: 100%;
+        
+    }
+
+    .instruction {
+        font-size: 1rem;
+    }
+}
